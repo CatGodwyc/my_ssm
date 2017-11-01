@@ -15,7 +15,7 @@ PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
 
 		<!--jdbc连接 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://localhost:3306/db_blog" userId="root"
+			connectionURL="jdbc:mysql://localhost:3306/blog" userId="root"
 			password="root">
 		</jdbcConnection>
 
@@ -48,7 +48,7 @@ PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
 
 		<!-- 配置表信息 -->
 		<!-- 要生成的表 tableName是数据库中的表 domainObjectName是生成的实体类名-->
-        <table tableName="t_blogger" domainObjectName="Blogger"
+        <table tableName="blog" domainObjectName="Blog"
 			   enableCountByExample="false"
 			   enableUpdateByExample="false"
 			   enableDeleteByExample="false"
@@ -60,14 +60,77 @@ PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
             <!-- 指定列的java数据类型 -->
             <!--<columnOverride column="LONG_VARCHAR_FIELD" jdbcType="VARCHAR" />-->
 		</table>
-		<table tableName="t_blog" domainObjectName="Blog"
+		<table tableName="blog_tags" domainObjectName="Blog_tags"
 			   enableCountByExample="false"
 			   enableUpdateByExample="false"
 			   enableDeleteByExample="false"
 			   enableSelectByExample="false"
 			   selectByExampleQueryId="false">
 		</table>
-		<table tableName="t_blogtype" domainObjectName="BlogType"
+		<table tableName="response1" domainObjectName="Response1"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="response2" domainObjectName="Response2"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="role" domainObjectName="Role"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="role_source" domainObjectName="Role_source"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="source" domainObjectName="Source"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="tags" domainObjectName="Tags"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="types" domainObjectName="Types"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="users_role" domainObjectName="Users_role"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="users" domainObjectName="Users"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="users_info" domainObjectName="Users_info"
 			   enableCountByExample="false"
 			   enableUpdateByExample="false"
 			   enableDeleteByExample="false"

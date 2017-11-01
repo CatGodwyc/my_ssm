@@ -1,4 +1,4 @@
-package com.dao;
+package text;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +12,7 @@ import javax.annotation.Resource;
  */
 @RunWith(SpringJUnit4ClassRunner.class) //使用spring测试
 @ContextConfiguration(locations = "classpath:applicationContext.xml") //设置spring配置文件路径
-public class BloggerDaoTestTest {
+public class BlogDaoTest {
     @Resource   //注入BloggerDao对象
 //    private IBloggerDao bloggerDao;
 

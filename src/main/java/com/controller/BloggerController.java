@@ -1,6 +1,5 @@
 package com.controller;
 
-import com.model.pojo.Blogger;
 import com.model.vo.JsonBean;
 import com.service.IBloggerService;
 import org.springframework.stereotype.Controller;

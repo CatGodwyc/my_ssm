@@ -1,6 +1,4 @@
-package com.dao;
-
-import com.model.pojo.Blog;
+package text;
 
 public interface BlogMapper {
     int deleteByPrimaryKey(Integer blogId);

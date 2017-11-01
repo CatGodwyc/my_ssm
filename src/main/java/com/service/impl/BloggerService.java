@@ -1,6 +1,5 @@
 package com.service.impl;
 
-import com.model.pojo.Blogger;
 import com.service.IBloggerService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

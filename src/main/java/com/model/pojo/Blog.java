@@ -1,32 +1,42 @@
 package com.model.pojo;
 
-import java.util.Date;
-
 public class Blog {
-    private Integer id;
+    private Integer blogId;
+
+    private Integer userId;
 
     private String title;
 
-    private String summary;
-
-    private Date releasedate;
-
-    private Integer clickhit;
-
-    private Integer replyhit;
-
-    private String keyword;
+    private String author;
 
     private Integer typeId;
 
-    private String content;
+    private String loadurl;
 
-    public Integer getId() {
-        return id;
+    private String localhosturl;
+
+    private String decoration;
+
+    private String createTime;
+
+    private String alterTime;
+
+    private Integer state;
+
+    public Integer getBlogId() {
+        return blogId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setBlogId(Integer blogId) {
+        this.blogId = blogId;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getTitle() {
@@ -37,44 +47,12 @@ public class Blog {
         this.title = title == null ? null : title.trim();
     }
 
-    public String getSummary() {
-        return summary;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setSummary(String summary) {
-        this.summary = summary == null ? null : summary.trim();
-    }
-
-    public Date getReleasedate() {
-        return releasedate;
-    }
-
-    public void setReleasedate(Date releasedate) {
-        this.releasedate = releasedate;
-    }
-
-    public Integer getClickhit() {
-        return clickhit;
-    }
-
-    public void setClickhit(Integer clickhit) {
-        this.clickhit = clickhit;
-    }
-
-    public Integer getReplyhit() {
-        return replyhit;
-    }
-
-    public void setReplyhit(Integer replyhit) {
-        this.replyhit = replyhit;
-    }
-
-    public String getKeyword() {
-        return keyword;
-    }
-
-    public void setKeyword(String keyword) {
-        this.keyword = keyword == null ? null : keyword.trim();
+    public void setAuthor(String author) {
+        this.author = author == null ? null : author.trim();
     }
 
     public Integer getTypeId() {
@@ -85,11 +63,51 @@ public class Blog {
         this.typeId = typeId;
     }
 
-    public String getContent() {
-        return content;
+    public String getLoadurl() {
+        return loadurl;
     }
 
-    public void setContent(String content) {
-        this.content = content == null ? null : content.trim();
+    public void setLoadurl(String loadurl) {
+        this.loadurl = loadurl == null ? null : loadurl.trim();
+    }
+
+    public String getLocalhosturl() {
+        return localhosturl;
+    }
+
+    public void setLocalhosturl(String localhosturl) {
+        this.localhosturl = localhosturl == null ? null : localhosturl.trim();
+    }
+
+    public String getDecoration() {
+        return decoration;
+    }
+
+    public void setDecoration(String decoration) {
+        this.decoration = decoration == null ? null : decoration.trim();
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime == null ? null : createTime.trim();
+    }
+
+    public String getAlterTime() {
+        return alterTime;
+    }
+
+    public void setAlterTime(String alterTime) {
+        this.alterTime = alterTime == null ? null : alterTime.trim();
+    }
+
+    public Integer getState() {
+        return state;
+    }
+
+    public void setState(Integer state) {
+        this.state = state;
     }
 }
