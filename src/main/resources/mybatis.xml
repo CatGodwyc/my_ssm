@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 启用懒加载 -->
+	<!--<settings>
+		<setting name="lazyLoadingEnabled" value="true"></setting>
+		<setting name="aggressiveLazyLoading" value="false"></setting>
+		&lt;!&ndash; 开启二级缓存 &ndash;&gt;
+		&lt;!&ndash; <setting name="cacheEnabled" value="true"/> &ndash;&gt;
+	</settings>-->
+
+	<!-- 设置别名 -->
+	<typeAliases>
+		<!-- <typeAlias alias="Assets" type="com.model.pojo.Assets"/> -->
+		<package name="com.model.pojo"/><!-- com.model.pojo这个包下面的会自动设置别名 ,比如Assets-->
+	</typeAliases>
+
+	<mappers>
+
+	</mappers>
+</configuration>
